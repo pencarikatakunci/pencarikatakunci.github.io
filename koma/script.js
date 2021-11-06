@@ -1,9 +1,13 @@
-$("#btnbarisbaru").click(() => {
-  let raw = $("#barisbaru").val().split('\n')
-  $("#barisbaru").val(raw.join(", "))
+$("#line").click(() => {
+  let raw = $("#line").val().split('\n')
+  $("#line").val(raw.join(", "))
+$("#btn").click(() => {
+  let raw = $("#text").val().split('\n')
+  $("#text").val(raw.join(", "))
 }) 
 
-$("#btnkoma").click(() => {
+$("#koma").click(() => {
+$("#btn").click(() => {
   let raw = $("#koma").val().split(',')
   $("#koma").val(raw.join("\n "))
 }) 
