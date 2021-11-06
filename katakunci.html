@@ -6,7 +6,7 @@
 
         <title>Keywords Generator</title>
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-                <style>
+     <style>
             a:hover, a:focus {
                 text-decoration: none;
             }
@@ -26,6 +26,13 @@
                     background-color: #115185;
                 }
             }
+                    
+.ada::-webkit-input-placeholder{
+	color: red;
+}
+.tidakada::-webkit-input-placeholder{
+	color: red;
+}
         </style>
                 <div class="container">
             <div class="row">
@@ -65,7 +72,7 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-6">
-                        <textarea id="filter-positive" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Ada (Terserah mau diisi atau tidak) gunakan huruf kecil semua"></textarea>
+                        <textarea id="filter-positive" class="ada" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Ada (Terserah mau diisi atau tidak) gunakan huruf kecil semua"></textarea>
                     </div>
                     <div class="col-xs-6">
                         <textarea id="filter-negative" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Tidak Ada (Terserah mau diisi atau tidak)gunakan huruf kecil semua"></textarea>
