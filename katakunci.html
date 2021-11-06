@@ -52,6 +52,7 @@
         <form method="POST" action="https://tools.dojo.cc/tools/keywords-generator" accept-charset="UTF-8"><input name="_token" type="hidden">
             <div class="form-group">
                 <b><div id="numofkeywords">0 : 0</div></b>
+                <p><i>Harus Huruf Kecil Semua</i></p>
             </div>
             <div class="form-group">
                 <textarea id="input" class="form-control" rows="10" cols="100" name="input_text"></textarea>
@@ -64,10 +65,10 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-6">
-                        <textarea id="filter-positive" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Positive Filter"></textarea>
+                        <textarea id="filter-positive" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Ada (Terserah mau diisi atau tidak)<p><i>gunakan huruf kecil semua<i></p>"></textarea>
                     </div>
                     <div class="col-xs-6">
-                        <textarea id="filter-negative" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Negative Filter"></textarea>
+                        <textarea id="filter-negative" class="form-control" rows="4" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Tidak Ada (Terserah mau diisi atau tidak)<p><i>gunakan huruf kecil semua<i></p>"></textarea>
                     </div>
                 </div>
                 <div id="container"></div>
