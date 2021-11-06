@@ -1,9 +1,9 @@
-$("#btn").click(() => {
-  let raw = $("#text").val().split('\n')
-  $("#text").val(raw.join(", "))
+$("#line").click(() => {
+  let raw = $("#line").val().split('\n')
+  $("#line").val(raw.join(", "))
 }) 
 
-$("#btn").click(() => {
+$("#koma").click(() => {
   let raw = $("#koma").val().split(',')
   $("#koma").val(raw.join("\n "))
 }) 
