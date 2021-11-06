@@ -30,37 +30,37 @@
                 <div class="container">
             <div class="row">
     <div class="col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2 text-center">
-        <h1>Keywords Generator</h1>
-        <p><a href="https://www.youtube.com/watch?v=qTnjOad-G78" target="_blank">demo</a></p>
+        <h1>Pencari Kata Kunci</h1>
+        <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <select class="form-control" name="min" id="min" onchange="FilterIfNotWorking()">
+                            <option value="0">Minimal Kata per-baris</option>
+                            <option value="1">Minimal 1 kata atau lebih per-baris</option>
+                            <option value="2">Minimal 2 kata atau lebih per-baris</option>
+                            <option value="3">Minimal 3 kata atau lebih per-baris</option>
+                            <option value="4">Minimal 4 kata atau lebih per-baris</option>
+                            <option value="5">Minimal 5 kata atau lebih per-baris</option>
+                            <option value="6">Minimal 6 kata atau lebih per-baris</option>
+                            <option value="7">Minimal 7 kata atau lebih per-baris</option>
+                            <option value="8">Minimal 8 kata atau lebih per-baris</option>
+                            <option value="9">Minimal 9 kata atau lebih per-baris</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         <form method="POST" action="https://tools.dojo.cc/tools/keywords-generator" accept-charset="UTF-8"><input name="_token" type="hidden">
             <div class="form-group">
-                <div id="numofkeywords">0 : 0</div>
+                <b><div id="numofkeywords">0 : 0</div></b>
             </div>
             <div class="form-group">
-                <textarea id="input" class="form-control" rows="25" cols="100" name="input_text"></textarea>
+                <textarea id="input" class="form-control" rows="10" cols="100" name="input_text"></textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-info" id="startjob" onclick="StartJob();" type="button">Generate</button>
                 <button class="btn btn-primary" type="submit" >Download</button>
             </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                        <select class="form-control" name="min" id="min" onchange="FilterIfNotWorking()">
-                            <option value="0">Minimum Word Count</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-6">
