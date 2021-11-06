@@ -26,13 +26,7 @@
                     background-color: #115185;
                 }
             }
-                    
-.ada::-webkit-input-placeholder{
-	color: green;
-}
-.tidakada::-webkit-input-placeholder{
-	color: red;
-}
+                   
         </style>
                 <div class="container">
             <div class="row">
@@ -42,16 +36,16 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                         <select class="form-control" name="min" id="min" onchange="FilterIfNotWorking()">
-                            <option value="0">Minimal Kata per-baris</option>
-                            <option value="1">Minimal 1 kata atau lebih per-baris</option>
-                            <option value="2">Minimal 2 kata atau lebih per-baris</option>
-                            <option value="3">Minimal 3 kata atau lebih per-baris</option>
-                            <option value="4">Minimal 4 kata atau lebih per-baris</option>
-                            <option value="5">Minimal 5 kata atau lebih per-baris</option>
-                            <option value="6">Minimal 6 kata atau lebih per-baris</option>
-                            <option value="7">Minimal 7 kata atau lebih per-baris</option>
-                            <option value="8">Minimal 8 kata atau lebih per-baris</option>
-                            <option value="9">Minimal 9 kata atau lebih per-baris</option>
+                            <option value="0">Default!</option>
+                            <option value="1">Minimal 1 kata atau lebih per-baris!</option>
+                            <option value="2">Minimal 2 kata atau lebih per-baris!</option>
+                            <option value="3">Minimal 3 kata atau lebih per-baris!</option>
+                            <option value="4">Minimal 4 kata atau lebih per-baris!</option>
+                            <option value="5">Minimal 5 kata atau lebih per-baris!</option>
+                            <option value="6">Minimal 6 kata atau lebih per-baris!</option>
+                            <option value="7">Minimal 7 kata atau lebih per-baris!</option>
+                            <option value="8">Minimal 8 kata atau lebih per-baris!</option>
+                            <option value="9">Minimal 9 kata atau lebih per-baris!</option>
                         </select>
                     </div>
                 </div>
@@ -59,7 +53,7 @@
         <form method="POST" action="https://tools.dojo.cc/tools/keywords-generator" accept-charset="UTF-8"><input name="_token" type="hidden">
             <div class="form-group">
                 <b><div id="numofkeywords">0 : 0</div></b>
-                <p><i>Harus Huruf Kecil Semua</i></p>
+                <p><i>Masukkan Huruf Kecil Semua</i></p>
             </div>
             <div class="form-group">
                 <textarea id="input" class="form-control" rows="10" cols="100" name="input_text"></textarea>
@@ -72,7 +66,7 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-6">
-                        <textarea id="filter-positive" class="form-control" class="ada" rows="6" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Ada (Terserah mau diisi atau tidak) gunakan huruf kecil semua"></textarea>
+                        <textarea id="filter-positive" class="form-control" rows="6" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Ada (Terserah mau diisi atau tidak) gunakan huruf kecil semua"></textarea>
                     </div>
                     <div class="col-xs-6">
                         <textarea id="filter-negative" class="form-control" rows="6" onkeyup="FilterIfNotWorking()" placeholder="Kata Wajib Tidak Ada (Terserah mau diisi atau tidak)gunakan huruf kecil semua"></textarea>
